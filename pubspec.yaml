@@ -1,7 +1,8 @@
 name: api_corrector
-description: "A new Flutter package project."
+description: A lightweight Flutter utility for validating and correcting API responses against defined schemas.
 version: 0.0.1
-homepage:
+repository: https://github.com/zenithstar1/api_corrector
+
 
 environment:
   sdk: ^3.9.2
