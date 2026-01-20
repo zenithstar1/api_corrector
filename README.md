@@ -1,39 +1,22 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# api_corrector
+Runtime API response validator for Dart &amp; Flutter. Protects apps from malformed or unexpected JSON—even with HTTP 200.
+A small, lightweight Dart / Flutter package that helps you **safely validate API
+JSON responses at runtime** — before they crash your app.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+It focuses on **what your app expects from the API**, not just HTTP status codes.
+## Why use api_corrector?
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+Because APIs don’t always behave 😅
+Even when the server responds with **HTTP 200 OK**, the JSON might:
+- contain an error payload
+- be missing required fields
+- return unexpected data types
+- partially break due to backend issues
+This package lets you clearly define **what a “valid” response looks like**
+and verifies that the API response actually matches it before your UI touches
+the data.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+If the response doesn’t match your expectations, it fails early and safely.
+## Clone the repository
+git clone https://github.com/zenithstar1/api_corrector.git
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
