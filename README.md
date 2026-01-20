@@ -19,6 +19,7 @@ the data.
 If the response doesn’t match your expectations, it fails early and safely.
 ## Clone the repository
 git clone https://github.com/zenithstar1/api_corrector.git
+
 🚀 **Live on pub.dev**  
 [![pub version](https://img.shields.io/pub/v/api_corrector?color=blueviolet)](https://pub.dev/packages/api_corrector)
 [![MIT License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
